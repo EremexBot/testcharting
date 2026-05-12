@@ -1,0 +1,19 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			  xmlns:theme=
+    "clr-namespace:Eremex.AvaloniaUI.Themes.DeltaDesign;assembly=Eremex.Avalonia.Themes.DeltaDesign"
+             x:Class="test12.App"
+             xmlns:local="using:test12"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+  
+    <Application.Styles>
+		<theme:DeltaDesignTheme/>
+<FluentTheme />
+    <StyleInclude Source="avares://Avalonia.Controls.Charts/Themes/Default.axaml" />
+    </Application.Styles>
+</Application>
